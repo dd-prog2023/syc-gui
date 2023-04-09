@@ -14,18 +14,7 @@ const LanguageSelector = ({currentLocale, label, onChange}) => (
         value={currentLocale}
         onChange={onChange}
     >
-        {
-            Object.keys(locales)
-                .filter(l => !ignore.includes(l))
-                .map(locale => (
-                    <option
-                        key={locale}
-                        value={locale}
-                    >
-                        {locales[locale].name}
-                    </option>
-                ))
-        }
+        <option value="zh-cn">简体中文</option>,<option value="en">English</option>
     </select>
 );
 
