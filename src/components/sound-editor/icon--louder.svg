@@ -1,17 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>lounder</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="lounder">
-            <g id="louder" transform="translate(2.000000, 4.000000)">
-                <path d="M6.7041,2.1221 L6.7041,10.5361 C6.7041,10.8851 6.4221,11.1671 6.0741,11.1671 L4.8971,11.1671 C4.6251,11.1671 4.3831,10.9921 4.2981,10.7321 C3.8181,9.2681 2.4521,8.2781 0.9111,8.2781 L0.6311,8.2781 C0.2841,8.2781 0.0001,7.9941 0.0001,7.6471 L0.0001,5.0111 C0.0001,4.6641 0.2841,4.3801 0.6311,4.3801 L0.9111,4.3801 C2.4521,4.3801 3.8181,3.3901 4.2981,1.9261 C4.3831,1.6661 4.6251,1.4911 4.8971,1.4911 L6.0741,1.4911 C6.4221,1.4911 6.7041,1.7731 6.7041,2.1221" id="Fill-1" fill="#CF63CF"></path>
-                <path d="M9.1172,5.2129 C9.7292,5.8259 9.7292,6.8319 9.1172,7.4449" id="Stroke-3" stroke="#CF63CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M11.3486,2.9815 C13.1966,4.8295 13.1966,7.8295 11.3486,9.6765" id="Stroke-5" stroke="#CF63CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M13.58,0.7501 C16.663,3.8321 16.663,8.8261 13.58,11.9081" id="Stroke-7" stroke="#CF63CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="24px" height="24px" viewBox="205.273 492.639 24 24" enable-background="new 205.273 492.639 24 24"
+	 xml:space="preserve">
+<defs>
+</defs>
+<rect display="none" fill="#E0E0E0" width="2229.455" height="1311.244"/>
+<rect x="205.273" y="492.639" display="none" fill="#C9C9C9" width="24" height="24"/>
+<path fill="#C963D1" d="M215.051,498.571L215.051,498.571l-3.91,2.933h-2.445c-0.68,0-1.22,0.542-1.22,1.21v4.91
+	c0,0.66,0.546,1.21,1.22,1.21h2.445l3.91,2.933c0.543,0.408,0.977,0.185,0.977-0.492v-12.212
+	C216.028,498.396,215.59,498.167,215.051,498.571z M219.782,502.079c-0.268-0.299-0.727-0.325-1.028-0.059s-0.329,0.728-0.063,1.03
+	c0.192,0.219,1.826,2.199,0.002,4.239c-0.27,0.301-0.244,0.762,0.058,1.031c0.139,0.125,0.313,0.186,0.487,0.186
+	c0.201,0,0.4-0.082,0.544-0.244C221.969,505.817,220.739,503.148,219.782,502.079z M221.989,500.125
+	c-0.269-0.301-0.731-0.327-1.032-0.058c-0.301,0.269-0.327,0.731-0.058,1.031c0.149,0.167,3.6,4.119,0,8.144
+	c-0.269,0.301-0.243,0.763,0.058,1.031c0.14,0.125,0.314,0.186,0.487,0.186c0.201,0,0.401-0.082,0.545-0.243
+	C226.449,505.229,222.035,500.176,221.989,500.125z M224.294,498.662c-0.27-0.301-0.731-0.327-1.032-0.058s-0.327,0.73-0.058,1.031
+	c0.012,0.014,1.244,1.408,1.864,3.485c0.816,2.737,0.188,5.29-1.864,7.585c-0.269,0.301-0.243,0.762,0.058,1.031
+	c0.14,0.125,0.313,0.186,0.486,0.186c0.201,0,0.401-0.082,0.545-0.244C230.047,505.245,224.352,498.728,224.294,498.662z"/>
 </svg>
