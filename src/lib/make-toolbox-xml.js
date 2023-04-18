@@ -11,7 +11,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
         'Stage selected: no motion blocks'
     );
     return `
-    <category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#4C97FF" secondaryColour="#3373CC">
+    <category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#f67258" secondaryColour="#f67258">
         ${isStage ? `
         <label text="${stageSelected}"></label>
         ` : `
@@ -155,7 +155,7 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
     const hello = ScratchBlocks.ScratchMsgs.translate('LOOKS_HELLO', 'Hello!');
     const hmm = ScratchBlocks.ScratchMsgs.translate('LOOKS_HMM', 'Hmm...');
     return `
-    <category name="%{BKY_CATEGORY_LOOKS}" id="looks" colour="#9966FF" secondaryColour="#774DCB">
+    <category name="%{BKY_CATEGORY_LOOKS}" id="looks" colour="#8282ff" secondaryColour="#8282ff">
         ${isStage ? '' : `
         <block type="looks_sayforsecs">
             <value name="MESSAGE">
@@ -290,7 +290,7 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
 
 const sound = function (isInitialSetup, isStage, targetId, soundName) {
     return `
-    <category name="%{BKY_CATEGORY_SOUND}" id="sound" colour="#D65CD6" secondaryColour="#BD42BD">
+    <category name="%{BKY_CATEGORY_SOUND}" id="sound" colour="#b86add" secondaryColour="#b86add">
         <block id="${targetId}_sound_playuntildone" type="sound_playuntildone">
             <value name="SOUND_MENU">
                 <shadow type="sound_sounds_menu">
@@ -345,7 +345,7 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
 
 const events = function (isInitialSetup, isStage) {
     return `
-    <category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900">
+    <category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#ffb400" secondaryColour="#ffb400">
         <block type="event_whenflagclicked"/>
         <block type="event_whenkeypressed">
         </block>
@@ -384,7 +384,7 @@ const events = function (isInitialSetup, isStage) {
 
 const control = function (isInitialSetup, isStage) {
     return `
-    <category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
+    <category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#f88200" secondaryColour="#f88200">
         <block type="control_wait">
             <value name="DURATION">
                 <shadow type="math_positive_number">
@@ -432,7 +432,7 @@ const control = function (isInitialSetup, isStage) {
 const sensing = function (isInitialSetup, isStage) {
     const name = ScratchBlocks.ScratchMsgs.translate('SENSING_ASK_TEXT', 'What\'s your name?');
     return `
-    <category name="%{BKY_CATEGORY_SENSING}" id="sensing" colour="#4CBFE6" secondaryColour="#2E8EB8">
+    <category name="%{BKY_CATEGORY_SENSING}" id="sensing" colour="#23c0ff" secondaryColour="#23c0ff">
         ${isStage ? '' : `
             <block type="sensing_touchingobject">
                 <value name="TOUCHINGOBJECTMENU">
@@ -509,7 +509,7 @@ const operators = function (isInitialSetup) {
     const banana = ScratchBlocks.ScratchMsgs.translate('OPERATORS_JOIN_BANANA', 'banana');
     const letter = ScratchBlocks.ScratchMsgs.translate('OPERATORS_LETTEROF_APPLE', 'a');
     return `
-    <category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438">
+    <category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#7cbf00" secondaryColour="#7cbf00">
         <block type="operator_add">
             <value name="NUM1">
                 <shadow type="math_number">
@@ -696,8 +696,8 @@ const variables = function () {
     <category
         name="%{BKY_CATEGORY_VARIABLES}"
         id="variables"
-        colour="#FF8C1A"
-        secondaryColour="#DB6E00"
+        colour="#00cdbd"
+        secondaryColour="#00cdbd"
         custom="VARIABLE">
     </category>
     `;
@@ -708,8 +708,8 @@ const myBlocks = function () {
     <category
         name="%{BKY_CATEGORY_MYBLOCKS}"
         id="myBlocks"
-        colour="#FF6680"
-        secondaryColour="#FF4D6A"
+        colour="#f674b7"
+        secondaryColour="#f674b7"
         custom="PROCEDURE">
     </category>
     `;
