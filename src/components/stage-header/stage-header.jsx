@@ -14,6 +14,8 @@ import {STAGE_SIZE_MODES} from '../../lib/layout-constants';
 import fullScreenIcon from './icon--fullscreen.svg';
 import largeStageIcon from './icon--large-stage.svg';
 import smallStageIcon from './icon--small-stage.svg';
+import fontPlusIcon from './font+.svg';
+import fontMinusIcon from './font-.svg';
 import unFullScreenIcon from './icon--unfullscreen.svg';
 
 import scratchLogo from '../menu-bar/scratch-logo.svg';
@@ -58,7 +60,11 @@ const StageHeaderComponent = function (props) {
         onSetStageUnFull,
         showBranding,
         stageSizeMode,
-        vm
+        vm,
+        isShowCoordinate,
+        onTriggerCoordinate,
+        onZoomOutCoordinateFontSize,
+        onZoomInCoordinateFontSize,
     } = props;
 
     let header = null;
@@ -109,8 +115,53 @@ const StageHeaderComponent = function (props) {
             isPlayerOnly ? (
                 []
             ) : (
-                <div className={styles.stageSizeToggleGroup}>
-                    <div>
+                    <div className={styles.stageSizeToggleGroup}>
+                        <div>
+                            <button className={classNames(
+                                styles.stageButton,
+                                styles.stageButtonFirst,
+                                (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
+                            )}
+                                onClick={onTriggerCoordinate}>{isShowCoordinate ? 'N' : 'S'}</button>
+                        </div>
+                        <div>
+                            {
+                                isShowCoordinate ? (
+                                        <div>
+                                            <button className={classNames(
+                                                styles.stageButton,
+                                                styles.stageButtonFirst,
+                                                (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
+                                            )}
+                                                onClick={onZoomOutCoordinateFontSize}><img
+                                                    alt={props.intl.formatMessage(messages.smallStageSizeMessage)}
+                                                    className={styles.stageButtonIcon}
+                                                    draggable={false}
+                                                    src={fontMinusIcon}
+                                                /></button></div>
+                                        
+                                ) : null
+                            }
+                        </div>
+                        <div>
+                            {
+                                isShowCoordinate ? (
+                                        
+                                        <div>    <button className={classNames(
+                                            styles.stageButton,
+                                            styles.stageButtonFirst,
+                                            (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
+                                        )}
+                                            onClick={onZoomInCoordinateFontSize}><img
+                                                alt={props.intl.formatMessage(messages.smallStageSizeMessage)}
+                                                className={styles.stageButtonIcon}
+                                                draggable={false}
+                                                src={fontPlusIcon}
+                                            /></button></div>
+                                ) : null
+                            }
+                        </div>
+                        <div>
                         <Button
                             className={classNames(
                                 styles.stageButton,
@@ -191,7 +242,11 @@ StageHeaderComponent.propTypes = {
     onSetStageUnFull: PropTypes.func.isRequired,
     showBranding: PropTypes.bool.isRequired,
     stageSizeMode: PropTypes.oneOf(Object.keys(STAGE_SIZE_MODES)),
-    vm: PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired,
+    isShowCoordinate: PropTypes.bool.isRequired,
+    onTriggerCoordinate: PropTypes.func.isRequired, 
+    onZoomOutCoordinateFontSize: PropTypes.func.isRequired, 
+    onZoomInCoordinateFontSize: PropTypes.func.isRequired, 
 };
 
 StageHeaderComponent.defaultProps = {

@@ -15,8 +15,22 @@ class StageHeader extends React.Component {
     constructor (props) {
         super(props);
         bindAll(this, [
-            'handleKeyPress'
+            'handleKeyPress',
+            'handleTriggerCoordinate',
+            'handleZoomOutCoordinateFontSize',
+            'handleZoomInCoordinateFontSize',
+            'handleOpenStageNativeSizePopover',
+            'handleCloseStageNativeSizePopover',
         ]);
+
+        this.minCoordinateFontSize = 10;
+        this.maxCoordinateFontSize = 18;
+        this.coordinateFontSize = 14;
+
+        this.state = {
+            isShowCoordinate: false, // 是否显示坐标网格
+            stageNativeSizePopoverOpen: false,
+        };
     }
     componentDidMount () {
         document.addEventListener('keydown', this.handleKeyPress);
@@ -29,6 +43,59 @@ class StageHeader extends React.Component {
             this.props.onSetStageUnFull(false);
         }
     }
+
+    /**
+     * 触发坐标网格的显示 or 隐藏
+     */
+     handleTriggerCoordinate () {
+        const visible = !this.state.isShowCoordinate;
+
+        this.props.vm.runtime.triggerCoordinate(visible);
+
+        this.setState({
+            isShowCoordinate: visible
+        });
+    }
+
+    /**
+     * 缩小坐标系的字体
+     */
+     handleZoomOutCoordinateFontSize () {
+        let temp = this.coordinateFontSize - 1;
+
+        temp = temp >= this.minCoordinateFontSize ? temp : this.minCoordinateFontSize;
+        console.log('temp :>> ', temp);
+
+        this.coordinateFontSize = temp;
+        this.props.vm.runtime.setCoordinateFontSize(temp);
+    }
+
+    /**
+     * 放大坐标系的字体
+     */
+     handleZoomInCoordinateFontSize () {
+        let temp = this.coordinateFontSize + 1;
+
+        temp = temp <= this.maxCoordinateFontSize ? temp : this.maxCoordinateFontSize;
+
+        this.coordinateFontSize = temp;
+        this.props.vm.runtime.setCoordinateFontSize(temp);
+    }
+
+    /**
+     * 打开 stageNativeSize 的 Popover 组件
+     */
+    handleOpenStageNativeSizePopover () {
+        this.setState({stageNativeSizePopoverOpen: true});
+    }
+
+    /**
+     * 关闭 stageNativeSize 的 Popover 组件
+     */
+    handleCloseStageNativeSizePopover () {
+        this.setState({stageNativeSizePopoverOpen: false});
+    }
+
     render () {
         const {
             ...props
@@ -36,7 +103,11 @@ class StageHeader extends React.Component {
         return (
             <StageHeaderComponent
                 {...props}
+                isShowCoordinate={this.state.isShowCoordinate}
                 onKeyPress={this.handleKeyPress}
+                onTriggerCoordinate={this.handleTriggerCoordinate}
+                onZoomOutCoordinateFontSize={this.handleZoomOutCoordinateFontSize}
+                onZoomInCoordinateFontSize={this.handleZoomInCoordinateFontSize}
             />
         );
     }
