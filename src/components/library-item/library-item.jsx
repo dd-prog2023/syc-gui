@@ -10,6 +10,8 @@ import classNames from 'classnames';
 import bluetoothIconURL from './bluetooth.svg';
 import internetConnectionIconURL from './internet-connection.svg';
 
+import robotIcon from '../../lib/default-project/bcf454acf82e4504149f7ffe07081dbc.svg';
+
 /* eslint-disable react/prefer-stateless-function */
 class LibraryItemComponent extends React.PureComponent {
     render () {
@@ -38,7 +40,7 @@ class LibraryItemComponent extends React.PureComponent {
                     ) : null}
                     <img
                         className={styles.featuredImage}
-                        src={this.props.iconURL}
+                        src={robotIcon}
                     />
                 </div>
                 {this.props.insetIconURL ? (
@@ -129,7 +131,7 @@ class LibraryItemComponent extends React.PureComponent {
                     >
                         <img
                             className={styles.libraryItemImage}
-                            src={this.props.iconURL}
+                            src={robotIcon}
                         />
                     </Box>
                 </Box>

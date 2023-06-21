@@ -402,8 +402,7 @@ const control = function (isInitialSetup, isStage) {
         </block>
         <block id="forever" type="control_forever"/>
         ${blockSeparator}
-        <block type="control_if"/>
-        <block type="control_if_else"/>
+        <block type="control_if_elseif_else"/>
         <block id="wait_until" type="control_wait_until"/>
         <block id="repeat_until" type="control_repeat_until"/>
         ${blockSeparator}
