@@ -79,17 +79,35 @@ const projectData = translateFunction => {
                         bitmapResolution: 1,
                         md5ext: 'bcf454acf82e4504149f7ffe07081dbc.svg',
                         dataFormat: 'svg',
-                        rotationCenterX: 48,
-                        rotationCenterY: 50
+                        rotationCenterX: 150,
+                        rotationCenterY: 200
                     },
                     {
-                        assetId: '0fb9be3e8397c983338cb71dc84d0b25',
-                        name: translator(messages.costume, {index: 2}),
+                        assetId: '8E92AC193A2D2994EF3EBAF79218D277',
+                        name: translator(messages.robot, {index: 1}),
                         bitmapResolution: 1,
-                        md5ext: '0fb9be3e8397c983338cb71dc84d0b25.svg',
+                        md5ext: '8E92AC193A2D2994EF3EBAF79218D277.svg',
                         dataFormat: 'svg',
-                        rotationCenterX: 46,
-                        rotationCenterY: 53
+                        rotationCenterX: 150,
+                        rotationCenterY: 200
+                    },
+                    {
+                        assetId: '7307AA964C82F980B24DE6367BEC471F',
+                        name: translator(messages.robot, {index: 2}),
+                        bitmapResolution: 1,
+                        md5ext: '7307AA964C82F980B24DE6367BEC471F.svg',
+                        dataFormat: 'svg',
+                        rotationCenterX: 150,
+                        rotationCenterY: 200
+                    },
+                    {
+                        assetId: '73FA0ADF6D85D35ADE3BEE71B51A3F9C',
+                        name: translator(messages.robot, {index: 3}),
+                        bitmapResolution: 1,
+                        md5ext: '73FA0ADF6D85D35ADE3BEE71B51A3F9C.svg',
+                        dataFormat: 'svg',
+                        rotationCenterX: 150,
+                        rotationCenterY: 200
                     }
                 ],
                 sounds: [

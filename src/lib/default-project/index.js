@@ -6,6 +6,9 @@ import meowWav from '!arraybuffer-loader!./83c36d806dc92327b9e7049a565c6bff.wav'
 import backdrop from '!raw-loader!./cd21514d0531fdffb22204e0ec5ed84a.svg';
 import costume1 from '!raw-loader!./bcf454acf82e4504149f7ffe07081dbc.svg';
 import costume2 from '!raw-loader!./0fb9be3e8397c983338cb71dc84d0b25.svg';
+import robot1 from '!raw-loader!./8E92AC193A2D2994EF3EBAF79218D277.svg';
+import robot2 from '!raw-loader!./7307AA964C82F980B24DE6367BEC471F.svg';
+import robot3 from '!raw-loader!./73FA0ADF6D85D35ADE3BEE71B51A3F9C.svg';
 /* eslint-enable import/no-unresolved */
 
 const defaultProject = translator => {
@@ -49,6 +52,21 @@ const defaultProject = translator => {
         assetType: 'ImageVector',
         dataFormat: 'SVG',
         data: encoder.encode(costume2)
+    }, {
+        id: '8E92AC193A2D2994EF3EBAF79218D277',
+        assetType: 'ImageVector',
+        dataFormat: 'SVG',
+        data: encoder.encode(robot1)
+    }, {
+        id: '7307AA964C82F980B24DE6367BEC471F',
+        assetType: 'ImageVector',
+        dataFormat: 'SVG',
+        data: encoder.encode(robot2)
+    }, {
+        id: '73FA0ADF6D85D35ADE3BEE71B51A3F9C',
+        assetType: 'ImageVector',
+        dataFormat: 'SVG',
+        data: encoder.encode(robot3)
     }];
 };
 
