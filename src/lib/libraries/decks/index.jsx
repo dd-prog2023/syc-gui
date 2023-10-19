@@ -66,7 +66,7 @@ import moveArrowKeysThumb from './thumbnails/move-arrow-keys.jpg';
 import spinThumb from './thumbnails/spin.jpg';
 
 export default {
-
+/*
     'intro-move-sayhello': {
         name: (
             <FormattedMessage
@@ -2032,5 +2032,5 @@ export default {
         }],
         urlId: 'whatsnew',
         hidden: true
-    }
+    }*/
 };
