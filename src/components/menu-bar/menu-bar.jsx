@@ -443,7 +443,6 @@ class MenuBar extends React.Component {
                                 })}
                                 draggable={false}
                                 src={this.props.logo}
-                                onClick={this.props.onClickLogo}
                             />
                         </div>
                         {(this.props.canChangeLanguage) && (<div
@@ -678,11 +677,9 @@ class MenuBar extends React.Component {
                                 </ProjectWatcher>
                             )
                         ) : (
-                            this.props.showComingSoon ? (
-                                <MenuBarItemTooltip id="share-button">
+                            this.props.showComingSoon ? [(
                                     <ShareButton className={styles.menuBarButton} />
-                                </MenuBarItemTooltip>
-                            ) : []
+                            )] : []
                         )}
                         {this.props.canRemix ? remixButton : []}
                     </div>
@@ -705,9 +702,7 @@ class MenuBar extends React.Component {
                                 </ProjectWatcher>
                             )
                         ) : (this.props.showComingSoon ? (
-                            <MenuBarItemTooltip id="community-button">
                                 <CommunityButton className={styles.menuBarButton} />
-                            </MenuBarItemTooltip>
                         ) : [])}
                     </div>
                 </div>
@@ -798,7 +793,6 @@ class MenuBar extends React.Component {
                         <React.Fragment>
                             {this.props.showComingSoon ? (
                                 <React.Fragment>
-                                    <MenuBarItemTooltip id="mystuff">
                                         <div
                                             className={classNames(
                                                 styles.menuBarItem,
@@ -811,11 +805,6 @@ class MenuBar extends React.Component {
                                                 src={mystuffIcon}
                                             />
                                         </div>
-                                    </MenuBarItemTooltip>
-                                    <MenuBarItemTooltip
-                                        id="account-nav"
-                                        place={this.props.isRtl ? 'right' : 'left'}
-                                    >
                                         <div
                                             className={classNames(
                                                 styles.menuBarItem,
@@ -835,7 +824,6 @@ class MenuBar extends React.Component {
                                                 src={dropdownCaret}
                                             />
                                         </div>
-                                    </MenuBarItemTooltip>
                                 </React.Fragment>
                             ) : []}
                         </React.Fragment>
