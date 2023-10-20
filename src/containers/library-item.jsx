@@ -4,7 +4,6 @@ import React from 'react';
 import {injectIntl} from 'react-intl';
 
 import LibraryItemComponent from '../components/library-item/library-item.jsx';
-import local_icons from '../lib/assets/local-icons.js';
 
 class LibraryItem extends React.PureComponent {
     constructor (props) {
@@ -107,7 +106,7 @@ class LibraryItem extends React.PureComponent {
     render () {
         const iconMd5 = this.curIconMd5();
         const iconURL = iconMd5 ?
-            local_icons[iconMd5] :
+            `./static/asset/${iconMd5}`:
             this.props.iconRawURL;
         return (
             <LibraryItemComponent
