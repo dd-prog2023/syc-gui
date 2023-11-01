@@ -10,7 +10,6 @@ import soundIconRtl from '../components/asset-panel/icon--sound-rtl.svg';
 import addSoundFromLibraryIcon from '../components/asset-panel/icon--add-sound-lib.svg';
 import addSoundFromRecordingIcon from '../components/asset-panel/icon--add-sound-record.svg';
 import fileUploadIcon from '../components/action-menu/icon--file-upload.svg';
-import surpriseIcon from '../components/action-menu/icon--surprise.svg';
 import searchIcon from '../components/action-menu/icon--search.svg';
 
 import RecordModal from './record-modal.jsx';
@@ -233,10 +232,6 @@ class SoundTab extends React.Component {
                     fileChange: this.handleSoundUpload,
                     fileInput: this.setFileInput,
                     fileMultiple: true
-                }, {
-                    title: intl.formatMessage(messages.surpriseSound),
-                    img: surpriseIcon,
-                    onClick: this.handleSurpriseSound
                 }, {
                     title: intl.formatMessage(messages.recordSound),
                     img: addSoundFromRecordingIcon,

@@ -31,7 +31,6 @@ import addLibraryBackdropIcon from '../components/asset-panel/icon--add-backdrop
 import addLibraryCostumeIcon from '../components/asset-panel/icon--add-costume-lib.svg';
 import fileUploadIcon from '../components/action-menu/icon--file-upload.svg';
 import paintIcon from '../components/action-menu/icon--paint.svg';
-import surpriseIcon from '../components/action-menu/icon--surprise.svg';
 import searchIcon from '../components/action-menu/icon--search.svg';
 
 import costumeLibraryContent from '../lib/libraries/costumes.json';
@@ -286,11 +285,6 @@ class CostumeTab extends React.Component {
                         fileChange: this.handleCostumeUpload,
                         fileInput: this.setFileInput,
                         fileMultiple: true
-                    },
-                    {
-                        title: intl.formatMessage(messages.addSurpriseCostumeMsg),
-                        img: surpriseIcon,
-                        onClick: addSurpriseFunc
                     },
                     {
                         title: intl.formatMessage(messages.addBlankCostumeMsg),

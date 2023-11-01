@@ -14,8 +14,6 @@ import {STAGE_SIZE_MODES} from '../../lib/layout-constants';
 import fullScreenIcon from './icon--fullscreen.svg';
 import largeStageIcon from './icon--large-stage.svg';
 import smallStageIcon from './icon--small-stage.svg';
-import fontPlusIcon from './font+.svg';
-import fontMinusIcon from './font-.svg';
 import unFullScreenIcon from './icon--unfullscreen.svg';
 
 import scratchLogo from '../menu-bar/scratch-logo.svg';
@@ -125,48 +123,11 @@ const StageHeaderComponent = function (props) {
                                 onClick={onTriggerCoordinate}>{isShowCoordinate ? 'N' : 'S'}</button>
                         </div>
                         <div>
-                            {
-                                isShowCoordinate ? (
-                                        <div>
-                                            <button className={classNames(
-                                                styles.stageButton,
-                                                styles.stageButtonFirst,
-                                                (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
-                                            )}
-                                                onClick={onZoomOutCoordinateFontSize}><img
-                                                    alt={props.intl.formatMessage(messages.smallStageSizeMessage)}
-                                                    className={styles.stageButtonIcon}
-                                                    draggable={false}
-                                                    src={fontMinusIcon}
-                                                /></button></div>
-                                        
-                                ) : null
-                            }
-                        </div>
-                        <div>
-                            {
-                                isShowCoordinate ? (
-                                        
-                                        <div>    <button className={classNames(
-                                            styles.stageButton,
-                                            styles.stageButtonFirst,
-                                            (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
-                                        )}
-                                            onClick={onZoomInCoordinateFontSize}><img
-                                                alt={props.intl.formatMessage(messages.smallStageSizeMessage)}
-                                                className={styles.stageButtonIcon}
-                                                draggable={false}
-                                                src={fontPlusIcon}
-                                            /></button></div>
-                                ) : null
-                            }
-                        </div>
-                        <div>
                         <Button
                             className={classNames(
                                 styles.stageButton,
                                 styles.stageButtonFirst,
-                                (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
+                                (stageSizeMode === STAGE_SIZE_MODES.small) ? styles.stageButtonToggledOff : null
                             )}
                             onClick={onSetStageSmall}
                         >
@@ -174,7 +135,7 @@ const StageHeaderComponent = function (props) {
                                 alt={props.intl.formatMessage(messages.smallStageSizeMessage)}
                                 className={styles.stageButtonIcon}
                                 draggable={false}
-                                src={smallStageIcon}
+                                src={largeStageIcon}
                             />
                         </Button>
                     </div>
@@ -183,7 +144,7 @@ const StageHeaderComponent = function (props) {
                             className={classNames(
                                 styles.stageButton,
                                 styles.stageButtonLast,
-                                (stageSizeMode === STAGE_SIZE_MODES.large) ? null : styles.stageButtonToggledOff
+                                (stageSizeMode === STAGE_SIZE_MODES.large) ? styles.stageButtonToggledOff : null
                             )}
                             onClick={onSetStageLarge}
                         >
@@ -191,7 +152,7 @@ const StageHeaderComponent = function (props) {
                                 alt={props.intl.formatMessage(messages.largeStageSizeMessage)}
                                 className={styles.stageButtonIcon}
                                 draggable={false}
-                                src={largeStageIcon}
+                                src={smallStageIcon}
                             />
                         </Button>
                     </div>

@@ -11,7 +11,6 @@ import {isRtl} from 'scratch-l10n';
 import backdropIcon from '../action-menu/icon--backdrop.svg';
 import fileUploadIcon from '../action-menu/icon--file-upload.svg';
 import paintIcon from '../action-menu/icon--paint.svg';
-import surpriseIcon from '../action-menu/icon--surprise.svg';
 import searchIcon from '../action-menu/icon--search.svg';
 
 const messages = defineMessages({
@@ -106,11 +105,6 @@ const StageSelector = props => {
                         fileChange: onBackdropFileUpload,
                         fileInput: fileInputRef,
                         fileMultiple: true
-                    }, {
-                        title: intl.formatMessage(messages.addBackdropFromSurprise),
-                        img: surpriseIcon,
-                        onClick: onSurpriseBackdropClick
-
                     }, {
                         title: intl.formatMessage(messages.addBackdropFromPaint),
                         img: paintIcon,

@@ -84,7 +84,7 @@ const projectData = translateFunction => {
                     },
                     {
                         assetId: '8E92AC193A2D2994EF3EBAF79218D277',
-                        name: translator(messages.robot, {index: 1}),
+                        name: translator(messages.costume, {index: 2}),
                         bitmapResolution: 1,
                         md5ext: '8E92AC193A2D2994EF3EBAF79218D277.svg',
                         dataFormat: 'svg',
@@ -93,7 +93,7 @@ const projectData = translateFunction => {
                     },
                     {
                         assetId: '7307AA964C82F980B24DE6367BEC471F',
-                        name: translator(messages.robot, {index: 2}),
+                        name: translator(messages.costume, {index: 3}),
                         bitmapResolution: 1,
                         md5ext: '7307AA964C82F980B24DE6367BEC471F.svg',
                         dataFormat: 'svg',
@@ -102,7 +102,7 @@ const projectData = translateFunction => {
                     },
                     {
                         assetId: '73FA0ADF6D85D35ADE3BEE71B51A3F9C',
-                        name: translator(messages.robot, {index: 3}),
+                        name: translator(messages.costume, {index: 4}),
                         bitmapResolution: 1,
                         md5ext: '73FA0ADF6D85D35ADE3BEE71B51A3F9C.svg',
                         dataFormat: 'svg',
