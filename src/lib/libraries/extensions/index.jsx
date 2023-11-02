@@ -58,13 +58,6 @@ export default [
         extensionId: 'music',
         iconURL: musicIconURL,
         insetIconURL: musicInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Play instruments and drums."
-                description="Description for the 'Music' extension"
-                id="gui.extension.music.description"
-            />
-        ),
         featured: true
     },
     {
@@ -78,13 +71,6 @@ export default [
         extensionId: 'pen',
         iconURL: penIconURL,
         insetIconURL: penInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Draw with your sprites."
-                description="Description for the 'Pen' extension"
-                id="gui.extension.pen.description"
-            />
-        ),
         featured: true
     },
     {
@@ -98,13 +84,6 @@ export default [
         extensionId: 'videoSensing',
         iconURL: videoSensingIconURL,
         insetIconURL: videoSensingInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Sense motion with the camera."
-                description="Description for the 'Video Sensing' extension"
-                id="gui.extension.videosensing.description"
-            />
-        ),
         featured: true
     }
 ];

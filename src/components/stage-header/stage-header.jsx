@@ -15,6 +15,8 @@ import fullScreenIcon from './icon--fullscreen.svg';
 import largeStageIcon from './icon--large-stage.svg';
 import smallStageIcon from './icon--small-stage.svg';
 import unFullScreenIcon from './icon--unfullscreen.svg';
+import coordOnIcon from './coord-on.svg';
+import coordOffIcon from './coord-off.svg';
 
 import scratchLogo from '../menu-bar/scratch-logo.svg';
 import styles from './stage-header.css';
@@ -119,8 +121,18 @@ const StageHeaderComponent = function (props) {
                                 styles.stageButton,
                                 styles.stageButtonFirst,
                                 (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
-                            )}
-                                onClick={onTriggerCoordinate}>{isShowCoordinate ? 'N' : 'S'}</button>
+                            )} onClick={onTriggerCoordinate}>
+                                {isShowCoordinate ? (
+                                <img
+                                className={styles.stageButtonIcon}
+                                draggable={false}
+                                src={coordOffIcon}/> ): (
+                                <img
+                                className={styles.stageButtonIcon}
+                                draggable={false}
+                                src={coordOnIcon}/>
+                                )}
+                            </button>
                         </div>
                         <div>
                         <Button
