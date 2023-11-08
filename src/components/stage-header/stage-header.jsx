@@ -117,10 +117,10 @@ const StageHeaderComponent = function (props) {
             ) : (
                     <div className={styles.stageSizeToggleGroup}>
                         <div>
-                            <button className={classNames(
+                            <Button className={classNames(
                                 styles.stageButton,
                                 styles.stageButtonFirst,
-                                (stageSizeMode === STAGE_SIZE_MODES.small) ? null : styles.stageButtonToggledOff
+                                null
                             )} onClick={onTriggerCoordinate}>
                                 {isShowCoordinate ? (
                                 <img
@@ -132,7 +132,7 @@ const StageHeaderComponent = function (props) {
                                 draggable={false}
                                 src={coordOnIcon}/>
                                 )}
-                            </button>
+                            </Button>
                         </div>
                         <div>
                         <Button
