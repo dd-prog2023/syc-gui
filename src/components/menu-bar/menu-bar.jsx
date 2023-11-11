@@ -92,6 +92,14 @@ import oldtimeyLogo from './oldtimey-logo.svg';
 
 import sharedMessages from '../../lib/shared-messages';
 
+// 点击出现弹窗的函数
+const pop_up_windows = function () {
+    var myWindow = window.open('','','width=573,height=715,location=0,menubar=0,left=700,top=200');
+    myWindow.document.write(`<!DOCTYPE html><html><title>关于Yocoding</title><body style='margin:0;padding:0' ><script>console.log(__dirname)</script><img src='./static/course.png' width=567,height=709></body></html>`)
+    myWindow.focus();
+};
+
+
 const ariaMessages = defineMessages({
     language: {
         id: 'gui.menuBar.LanguageSelector',
@@ -628,7 +636,9 @@ class MenuBar extends React.Component {
                     <div
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
-                        onClick={this.props.onOpenTipLibrary}
+                        // 修改这里
+                        // onClick={this.props.onOpenTipLibrary}
+                        onClick={pop_up_windows}
                     >
                         <img
                             className={styles.helpIcon}
