@@ -65,5 +65,72 @@
             }
         ],
         "blocks": {}
+    },
+    {
+        "name": "小能",
+        "tags": [
+            "robot"
+        ],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "assetId": "12bc1341119bd68a892e53bf9ff887b5",
+                "name": "小能-a",
+                "bitmapResolution": 1,
+                "md5ext": "12bc1341119bd68a892e53bf9ff887b5.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 150,
+                "rotationCenterY": 200
+            },
+            {
+                "assetId": "3332d6d0c241de0ae58fbe5dfc675262",
+                "name": "小能-b",
+                "bitmapResolution": 1,
+                "md5ext": "3332d6d0c241de0ae58fbe5dfc675262.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 150,
+                "rotationCenterY": 200
+            },
+            {
+                "assetId": "9a26af33b6d4a93628447f63bcff6a76",
+                "name": "小能-c",
+                "bitmapResolution": 1,
+                "md5ext": "9a26af33b6d4a93628447f63bcff6a76.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 150,
+                "rotationCenterY": 200
+            },
+            {
+                "assetId": "ee760cf7d303924c9442742a117c2eb9",
+                "name": "小能-d",
+                "bitmapResolution": 1,
+                "md5ext": "ee760cf7d303924c9442742a117c2eb9.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 150,
+                "rotationCenterY": 200
+            }
+        ],
+        "sounds": [
+            {
+                "assetId": "1da43f6d52d0615da8a250e28100a80d",
+                "name": "computer beeps1",
+                "dataFormat": "wav",
+                "format": "",
+                "rate": 44100,
+                "sampleCount": 76800,
+                "md5ext": "1da43f6d52d0615da8a250e28100a80d.wav"
+            },
+            {
+                "assetId": "28c76b6bebd04be1383fe9ba4933d263",
+                "name": "computer beeps2",
+                "dataFormat": "wav",
+                "format": "",
+                "rate": 44100,
+                "sampleCount": 38144,
+                "md5ext": "28c76b6bebd04be1383fe9ba4933d263.wav"
+            }
+        ],
+        "blocks": {}
     }
 ]

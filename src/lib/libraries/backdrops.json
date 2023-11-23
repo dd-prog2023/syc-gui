@@ -11,5 +11,16 @@
         "md5ext": "7dd9d6fcc46ce90aa72872ca8b0b2af5.png",
         "rotationCenterX": 480,
         "rotationCenterY": 360
+    },
+    {
+        "name": "Ocean",
+        "tags": [
+            "ocean",
+            "blue"
+        ],
+        "assetId": "bg-ocean",
+        "bitmapResolution": 2,
+        "dataFormat": "svg",
+        "md5ext": "bg-ocean.svg"
     }
 ]

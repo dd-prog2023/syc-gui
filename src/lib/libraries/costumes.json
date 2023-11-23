@@ -10,5 +10,17 @@
         "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
         "rotationCenterX": 150,
         "rotationCenterY": 200
+    },
+    {
+        "name": "小能",
+        "tags": [
+            "robot"
+        ],
+        "assetId": "12bc1341119bd68a892e53bf9ff887b5",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "12bc1341119bd68a892e53bf9ff887b5.svg",
+        "rotationCenterX": 150,
+        "rotationCenterY": 200
     }
 ]
