@@ -112,13 +112,13 @@ const projectData = translateFunction => {
                 ],
                 sounds: [
                     {
-                        assetId: '83c36d806dc92327b9e7049a565c6bff',
-                        name: translator(messages.meow),
+                        assetId: 'e5a346abc2f8f8c892ca43c396862186',
+                        name: '吭吭',//translator(messages.meow),
                         dataFormat: 'wav',
                         format: '',
                         rate: 22050,
                         sampleCount: 18688,
-                        md5ext: '83c36d806dc92327b9e7049a565c6bff.wav'
+                        md5ext: 'e5a346abc2f8f8c892ca43c396862186.wav'
                     }
                 ],
                 volume: 100,

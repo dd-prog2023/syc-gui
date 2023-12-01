@@ -46,22 +46,13 @@
         ],
         "sounds": [
             {
-                "assetId": "1da43f6d52d0615da8a250e28100a80d",
-                "name": "computer beeps1",
+                "assetId": "e5a346abc2f8f8c892ca43c396862186",
+                "name": "吭吭",
                 "dataFormat": "wav",
                 "format": "",
                 "rate": 44100,
                 "sampleCount": 76800,
-                "md5ext": "1da43f6d52d0615da8a250e28100a80d.wav"
-            },
-            {
-                "assetId": "28c76b6bebd04be1383fe9ba4933d263",
-                "name": "computer beeps2",
-                "dataFormat": "wav",
-                "format": "",
-                "rate": 44100,
-                "sampleCount": 38144,
-                "md5ext": "28c76b6bebd04be1383fe9ba4933d263.wav"
+                "md5ext": "e5a346abc2f8f8c892ca43c396862186.wav"
             }
         ],
         "blocks": {}
@@ -113,22 +104,13 @@
         ],
         "sounds": [
             {
-                "assetId": "1da43f6d52d0615da8a250e28100a80d",
-                "name": "computer beeps1",
+                "assetId": "d6710c4767d5319a535bfb4cc0659bf3",
+                "name": "哈哈",
                 "dataFormat": "wav",
                 "format": "",
                 "rate": 44100,
                 "sampleCount": 76800,
-                "md5ext": "1da43f6d52d0615da8a250e28100a80d.wav"
-            },
-            {
-                "assetId": "28c76b6bebd04be1383fe9ba4933d263",
-                "name": "computer beeps2",
-                "dataFormat": "wav",
-                "format": "",
-                "rate": 44100,
-                "sampleCount": 38144,
-                "md5ext": "28c76b6bebd04be1383fe9ba4933d263.wav"
+                "md5ext": "d6710c4767d5319a535bfb4cc0659bf3.wav"
             }
         ],
         "blocks": {}
